@@ -7,6 +7,7 @@ export const InfoContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: 800px;
+  /* background: ${({ darkMode }) => (darkMode ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)" : "#fff")}; */
   background: ${({ darkMode }) => (darkMode ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)" : "#fff")};
 `;
 
@@ -16,6 +17,14 @@ export const InfoImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px 150px;
+  @media screen and (max-width: 760px) {
+    margin: 0px 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 0px 10px;
+  }
 `;
 
 export const Img = styled.img`
@@ -26,6 +35,14 @@ export const Img = styled.img`
 
 export const InfoContent = styled.div`
   max-width: 800px;
+  margin: 0px 150px;
+  @media screen and (max-width: 760px) {
+    margin: 0px 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 0px 10px;
+  }
 `;
 
 export const InfoTitle = styled.h1`

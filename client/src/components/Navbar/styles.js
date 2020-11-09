@@ -21,7 +21,7 @@ export const NavbarContainer = styled.div`
   max-width: 1300px;
   z-index: 1;
 
-  a {
+  .link-items {
     color: ${({ scrollNav }) => scrollNav ? "#000" : "#fff"};
     border-bottom: 1px solid;
   }
@@ -52,4 +52,7 @@ export const NavItem = styled.div`
 `;
 export const NavLinks = styled(Link)`
   font-size: 1.3rem;
+  &.active{
+    border: 1px solid;
+  }
 `;

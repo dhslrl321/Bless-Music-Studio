@@ -5,48 +5,34 @@ import {
   NavItem, NavLinks, NavMenu,
   NavbarContainer
 } from './styles';
-const Navbar = ({ toggle }) => {
-
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 900) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, [])
+const Navbar = ({ toggle, scrollNav }) => {
 
   return (
     <>
       <Nav>
         <NavbarContainer scrollNav={scrollNav}>
-          <NavLogo>Bless Music Studio</NavLogo>
-          <IconWrapper onClick={toggle}>
+          <NavLogo className="link-items" to="/">Bless Music Studio</NavLogo>
+          <IconWrapper className="link-items" onClick={toggle}>
             <FaBars />
           </IconWrapper>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/tour">
+              <NavLinks className="link-items" to="/tour">
                 Tour
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/pricing">
+              <NavLinks className="link-items" to="/pricing">
                 Pricing
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/reservation">
+              <NavLinks className="link-items" to="/reservation">
                 Reservation
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/faq">
+              <NavLinks className="link-items" to="/faq">
                 FAQ
               </NavLinks>
             </NavItem>

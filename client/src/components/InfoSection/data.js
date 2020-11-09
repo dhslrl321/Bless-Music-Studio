@@ -13,7 +13,7 @@ export const infoData2 = {
   title: "열려있어요.",
   description: "성악, 현악, 관악 연습생 혹은 취준생 그리고 레슨 공간이 필요한 선생님 누구에게나 열려있어요.",
   darkMode: true,
-  lightText: true
+  lightText: false
 }
 
 export const infoData3 = {
