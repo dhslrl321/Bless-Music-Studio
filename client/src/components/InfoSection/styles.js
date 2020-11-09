@@ -7,7 +7,7 @@ export const InfoContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: 800px;
-  background: ${({ darkMode }) => (darkMode ? "#fff8e1" : "#fff")};
+  background: ${({ darkMode }) => (darkMode ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)" : "#fff")};
 `;
 
 export const InfoImgWrapper = styled.div`
