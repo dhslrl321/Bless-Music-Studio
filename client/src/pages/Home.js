@@ -9,7 +9,6 @@ const Home = () => {
   const toggle = () => {
     setSidebarOpen(!sidebarOpen);
     console.log("ci");
-
   }
 
   return (
@@ -20,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
