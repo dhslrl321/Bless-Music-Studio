@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  background: transparent;
 `;
 
 export const NavbarContainer = styled.div`
@@ -30,7 +31,7 @@ export const IconWrapper = styled.div`
 `;
 export const NavLogo = styled(Link)`
   justify-self: flex-start;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 `;
 export const NavMenu = styled.div`
@@ -41,7 +42,6 @@ export const NavMenu = styled.div`
   }
 `;
 export const NavItem = styled.div`
-  color: #000;
   display: flex;
   padding: 0 1rem;
   height: 100%;

@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
-import Sidebar from '../components/Sidebar'
-import Navbar from '../components/Navbar'
-
+import Sidebar from '../components/Sidebar/index'
+import Navbar from '../components/Navbar/index'
+import HeroSection from '../components/HeroSection/index';
+import InfoSection from "../components/InfoSection/index";
+import { infoData1, infoData2, infoData3 } from "../components/InfoSection/data";
+import booking from "../images/booking.svg";
+import music from "../images/music.svg";
+import think from "../images/think.svg";
+import Footer from '../components/Footer';
 const Home = () => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -15,6 +21,11 @@ const Home = () => {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <HeroSection />
+      <InfoSection {...infoData1} img={booking} />
+      <InfoSection {...infoData2} img={music} />
+      <InfoSection {...infoData3} img={think} />
+      <Footer />
     </>
   )
 }
