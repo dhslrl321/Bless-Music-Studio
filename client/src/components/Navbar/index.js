@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars } from "react-icons/fa";
 import {
   IconWrapper, Nav, NavLogo,
@@ -6,10 +6,25 @@ import {
   NavbarContainer
 } from './styles';
 const Navbar = ({ toggle }) => {
+
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 600) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, [])
+
   return (
     <>
       <Nav>
-        <NavbarContainer>
+        <NavbarContainer scrollNav={scrollNav}>
           <NavLogo>Bless Music Studio</NavLogo>
           <IconWrapper onClick={toggle}>
             <FaBars />

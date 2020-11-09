@@ -20,6 +20,11 @@ export const NavbarContainer = styled.div`
   padding: 0 24px;
   max-width: 1300px;
   z-index: 1;
+
+  a {
+    color: ${({ scrollNav }) => scrollNav ? "#000" : "#fff"};
+    border-bottom: 1px solid;
+  }
 `;
 export const IconWrapper = styled.div`
   display: none;
@@ -36,7 +41,6 @@ export const NavLogo = styled(Link)`
 `;
 export const NavMenu = styled.div`
   display: flex;
-  
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -47,5 +51,5 @@ export const NavItem = styled.div`
   height: 100%;
 `;
 export const NavLinks = styled(Link)`
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 `;
