@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
+import InteriorSection from '../components/InteriorSection';
+import KakaoMapSection from '../components/KakaoMapSection';
 
 const Tour = () => {
 
@@ -15,6 +17,8 @@ const Tour = () => {
     <>
       <Sidebar />
       <Navbar toggle={toggle} scrollNav={true} />
+      <InteriorSection />
+      <KakaoMapSection />
     </>
   )
 }
