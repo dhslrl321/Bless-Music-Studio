@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const InteriorContainer = styled.div`
-  height: 1080px;
+  height: 130vh;
   margin-top: -80px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  background: #FAFAFA;
 `;
 
 export const InteriorHeaderWrapper = styled.div`
@@ -41,12 +42,13 @@ export const InteriorContentWrapper = styled.div`
 
 export const ImageBallWrap = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 100px);
   grid-template-rows: repeat(2, 100px);
   grid-gap: 30px;
   justify-content: center;
+  margin-bottom: 50px;
   @media screen and (max-width: 780px){
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
   };
 `;
@@ -66,13 +68,10 @@ export const Img = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   :hover{ 
     width: 100px;
     height: 100px;
-    p {
-      color: black;
-    }
   }
 `;
 
@@ -82,5 +81,36 @@ export const Description = styled.p`
 
 export const ImageWrapper = styled.div`
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #FAFAFA;
 `;
 
+export const ImageViewerHeader = styled.h1`
+  margin: 50px 0;
+  font-size: 2rem;
+  color: #444;
+`;
+
+export const ImageViewer = styled.div`
+  width: 60%;
+  height: 460px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px gray;
+
+  @media screen and (max-width: 768px){
+    width: 80%;
+    height: 252px
+  }
+  @media screen and (max-width: 480px){
+    width: 90%;
+    height: 220px;
+    box-shadow: 1px 1px 5px gray;
+  }
+`;
+
+export const RoomImg = styled.img``;

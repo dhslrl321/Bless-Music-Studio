@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { FaBars } from "react-icons/fa";
 import {
   IconWrapper, Nav, NavLogo,

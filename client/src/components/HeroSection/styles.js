@@ -22,6 +22,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  opacity: 0.9;
 `;
 
 export const HeroContent = styled.div`
