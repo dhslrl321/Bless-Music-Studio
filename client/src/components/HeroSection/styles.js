@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  position: relative;
   z-index: 1;
   background: #eee;
   height: 100vh;

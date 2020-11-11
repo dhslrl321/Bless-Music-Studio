@@ -16,11 +16,12 @@ const KakaoMapSection = () => {
 
     const map = new kakao.maps.Map(container, options);
 
-    const markerPosition = new kakao.maps.LatLng(37.505021, 126.763911);
-    const marker = new kakao.maps.Marker({
-      position: markerPosition
-    });
-    marker.setMap(markerPosition);
+    // 마커 띄우기 실패
+    // const markerPosition = new kakao.maps.LatLng(37.505021, 126.763911);
+    // const marker = new kakao.maps.Marker({
+    //   position: markerPosition
+    // });
+    // marker.setMap(markerPosition);
   }, []);
   return (
     <MapContainer>
