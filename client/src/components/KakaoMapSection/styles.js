@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const MapContainer = styled.div`
   background: white;
-  height: 100%;
+  height: 100vh;
+  margin-top: -80px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;

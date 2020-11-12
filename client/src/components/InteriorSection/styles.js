@@ -8,7 +8,7 @@ export const InteriorContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   background: #FAFAFA;
-  z-index: 10;
+  z-index: 1;
 `;
 
 export const InteriorHeaderWrapper = styled.div`
