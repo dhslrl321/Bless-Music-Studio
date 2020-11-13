@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const InteriorContainer = styled.div`
-  height: 130vh;
+  height: 100%;
   margin-top: -80px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   background: #FAFAFA;
-  z-index: 1;
 `;
 
 export const InteriorHeaderWrapper = styled.div`
@@ -69,6 +68,7 @@ export const Img = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 40px;
+  box-shadow: 2px 2px 2px gray;
   transition: 0.2s ease-in-out;
   :hover{ 
     width: 100px;
@@ -78,6 +78,7 @@ export const Img = styled.img`
 
 export const Description = styled.p`
   color: gray;
+  margin-top: 10px;
 `;
 
 export const ImageWrapper = styled.div`
@@ -102,7 +103,7 @@ export const ImageViewer = styled.div`
   background: white;
   border-radius: 20px;
   box-shadow: 2px 2px 12px gray;
-
+  margin-bottom: 200px;
   @media screen and (max-width: 768px){
     width: 80%;
     height: 252px

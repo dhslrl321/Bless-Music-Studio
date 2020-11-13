@@ -11,12 +11,11 @@ const Tour = () => {
 
   const toggle = () => {
     setSidebarOpen(!sidebarOpen);
-    console.log("ci");
   }
 
   return (
     <>
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen} toggle={toggle} />
       <Navbar toggle={toggle} scrollNav={true} />
       <InteriorSection />
       <KakaoMapSection />
@@ -25,4 +24,4 @@ const Tour = () => {
   )
 }
 
-export default Tour
+export default Tour;

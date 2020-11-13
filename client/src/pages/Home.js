@@ -15,7 +15,6 @@ const Home = () => {
 
   const toggle = () => {
     setSidebarOpen(!sidebarOpen);
-    console.log("ci");
   }
 
   const changeNav = () => {

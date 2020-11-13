@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MapContainer = styled.div`
   background: white;
-  height: 100vh;
+  height: 100%;
   margin-top: -80px;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const MapContainer = styled.div`
 
 export const MapHeader = styled.div`
   width: 65%;
-  margin-top: 100px;
+  margin-top: 200px;
 `;
 
 export const HeaderText = styled.h1`
@@ -35,6 +35,7 @@ export const MapContent = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 100px;
 `;
 
 export const MapDiv = styled.div`
@@ -43,10 +44,12 @@ export const MapDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 export const Map = styled.div`
   width: 500px;
   height: 400px;
   border: 1px solid;
+  margin-top: 100px;
 `;
