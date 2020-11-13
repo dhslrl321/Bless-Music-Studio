@@ -39,7 +39,7 @@ export const MapContent = styled.div`
 
 export const MapDiv = styled.div`
   width: 100%;
-  height: 800px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
