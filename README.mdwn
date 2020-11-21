@@ -1,18 +1,18 @@
-🎧🎹🎼📝
+🎧🎹🎼
 
 #### Bless-Music-Studio
 
 > 본 프로젝트는 블레스 뮤직 스튜디오의 공식 홈페이지를 제작하며 사용했던 기술들과 구조에 대해서 나타내고 있습니다.
 
+### 배포 링크 Deploy Link
+
+[배포 링크](http://localhost:8080/) 에서 블레스 뮤직 스튜디오에 대한 정보를 확인해보세요!
+
 ---
 
 # <center> 🎹 Bless-Music-Studio 🎹 </center>
 
----
-
-2020 [과학기술정보통신부](https://www.msit.go.kr/web/main/main.do)에서 주관하는 2020 SW 해커톤에 참여하여 만든 Open Banking API 를 이용한 계좌 통합 조회 서비스입니다.
-
-## 목차
+# 📝목차
 
 1. ### [팀원 소개](#-팀원-소개)
 2. ### [기획 배경 및 필요셩](#-기획-배경-및-필요성)
@@ -23,8 +23,8 @@
 3. ### [What is Challenging](#-What-is-Challenging)
 
 - - 3-1 [SEO 검색 엔진 최적화](#-SEO-검색-엔진-최적화)
-- - 3-2 [Kakao Map Open API](#-Kakao-Map-Open-API)
-- - 3-3 [Nginx](#-Nginx)
+- - 3-2 [Server Side Rendering](#-Server-Side-Rendering)
+- - 3-3 [Nginx와 무중단 배포](#-Nginx-와-무중단-배포)
 - - 3-4 [Aws S3](#-Aws-S3)
 
 4. ### [프로젝트 소개](#-프로젝트-소개)
@@ -59,93 +59,62 @@
 
 # 👩🏻‍💻 What is Challenging
 
-### 📌 페어 프로그래밍
+### 📌 SEO 검색 엔진 최적화
 
-본 프로젝트는 *애자일 방법론*의 **페어 프로그래밍**을 적용하였습니다.
-**협업을 중시하는 2명의 개발자가**모여 협업을 더욱 극대화 하기 위해 적용하게된 방법론입니다.
-2박3일간의 짦은 해커톤 일정임에도 불구하고 페어 프로그래밍을 적용한 이유는 다음과 같습니다.
+검색엔진 최적화를 진행함
 
-1. 무결한 코드를 위한 **즉각적인 코드리뷰**
-2. 지식의 공유
-3. 많은 문제가 발생할 수 있는 위험을 미리 차단
-4. Hot Fix와 같은 긴급한 작업을 할 때 누구 할 것 없이 빠른 피드백
-5. **팀워크**
+### 📌 Server Side Rendering
 
-빠른 시간 내에 서비스를 개발하기 위해서는 효율성이 중시됩니다.
-하지만 페어프로그래밍은 시간적 효율성 에서 뒤떨어지지만 잦은 협업으로 인해 서로의 성향을 잘 파악하고있던 상황이었기 때문에 합이 잘 맞아 개별 프로그래밍과 같은 성능을 내며 일정을 수행했습니다.
+서버사이드 렌더링을 진행함
 
-### 📌 마이크로 서비스 아키텍쳐
+### 📌 Nginx 와 무중단 배포
 
-기존의 모놀리틱 서비스를 개발하다 발견한 문제점은 바로 **복잡성**입니다.
-지금까지 개발했던 서비스는 하나의 서버에 다양한 서비스 기능들이 들어가있는 구조였지만 마이크로 서비스 아키텍쳐를 구성해보고 싶다는 막연한 생각에 시작하게 된 마이크로 서비스였습니다.
-처음에는 간단한 생각에서 시작했지만 점점 파고 들어가니 공부해야할 것이 끝도 없이 나왔다는...
+무중단 배포를 진행함
 
-### 📌 AWS
-
-Computing Engine을 선정하기 위해 다양한 후보 중 AWS가 가장 매력적이었습니다.
-AWS를 선정한 **구체적인 이유**가 있는데, 다음과 같습니다.
-
-1. Hackathon 발표를 위해 Local 에서 구동되는 Engine이 아니라 **발표용 PC에서도 돌아갈 수 있는 Cloud Engine**이 필요했다.
-2. 우리를 제외한 **모든 팀이 다 Local에서 돌아가더라**, 우리는 **차이점**을 둬보자!
-3. AWS Freetier의 기간이 거의 끝나간다. 이대로 끝내기는 아쉽다.(결국 MSA 구조로 인해 Freetier에 해당되지 않는 Engine을 사용했긴 합니다..)
-4. 연구실에 있는 리눅스는 학과 홈페이지 Hosting을 위해 대기중이었다.
-
-결국 AWS의 EC2를 사용하게 되었습니다.
+### 📌 Aws S3
 
 # ⛳️ 프로젝트 소개
 
 ### 📌 사용 기술
 
-![Tech](https://github.com/dhslrl321/Finx-App/blob/master/images/tech.png)
+![Tech](https://github.com/dhslrl321/Finx-App/blob/master/ima)
 
-- **React / CRA**
+- **Front-End**
 - - Context API
 - - styled-Components
-- - axios
-- - Sass (Partial)
+- - styled-reset
+- - react-scroll
 - - React-Router-Dom
+- - Reactive Styling
+- - Kakao Open API
 
-- **Spring Boot**
-- - Spring Cloud
-- - Netflix Eureka
-- - Netflix Zuul
-- - Spring Security
-- - Spring Data JPA
+- **Server Side Rendering**
+- - Next.js
 
 - **Infrastructure**
-- - RDS (Mysql)
-- - Apache Tomcat
-- - Amazon Cloud Service
+- - AWS EC2
+- - AWS S3
+
+- **DevOps**
+- - Nginx
+- - Travis CI
+- - Docker
 
 - **Etc**
 - - Git / Github / Github Pages
 - - OAuth
-- - Netflix OSS
 - - Rest API
 - - Javascript Object Notation
 
+### 📌 서비스 아키텍처
+
+![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/mpng)
+서비스 아키텍쳐에 대해서 설명합니다.
+
 ### 📌 배포 구조
 
-![Deploy](https://github.com/dhslrl321/Finx-App/blob/master/images/deploy.png)
-
-- **React**
-  > Static Site를 호스팅할 수 있는 Platform의 다양한 후보들이 있었다. AWS의 S3와 Cafe 24, Github Pages 등등이 있었는데, Cafe 24와 S3로 가기엔 무리가 있었다. EC2로 Backend Server를 Hosting 하기로 하였는데, 각 서버들의 크기로 인해 Freetier의 영역에서 벗어나 t2.large Instance를 사용하기로 했어서 금액적인 문제가 있기 떄문에 쉽고 간편한 Github Page에 npm의 gh-pages 모듈을 이용해서 호스팅 하였다.
-- **Spring Boot**
-  > 기본 프리티어로 제공되는 t2.micro에는 가상 CPU가 1 core이며 메모리는 1GB가 된다. 하지만 우리가 사용할 마이크로 서비스 서버가 실행될 때의 메모라 영익이 500mb 가 기본적으로 넘기 때문에 더 큰 메모리를 갖는 인스턴스가 필요했다. 그래서 선택한 것이 t2.large로 가성 CPU가 2 core에 8GB Ram을 갖기 때문에 t2.large로 결정하였다.
-- **RDS**
-  > RDS는 프리티어용 Mysql 8.0.20v의 Community Engine을 갖는 RDS를 선택했다.
-
-### 📌 Microservice Architecture
-
-![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/msa.png)
-
-- **MSA**
-- - 인증 서버
-    > **Auth Server** 에서는 사용자가 최초 로그인을 하게되면 **Openbanking** 에서 제공되는 인증 페이지로 넘어간 뒤, 인증이 끝나고 받은 `code` 값을 토대로 `Access Token` 과 `Refresh Token`을 발급 받는다.
-- - 사용자 서버
-    > **User Server** 에서 사용자 관련 리소스의 처리를 수행한다.
-- - 뱅킹 서버
-    > **Banking Server** 에서는 사용자 DB에 저장된 `Access Token`과 `Refresh Token`을 토대로 Open Banking API로 요청을 보내게 되고 요청한 결과에 따라 Banking Server에서 지정된 로직을 수행하게 된다.
+![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/mpng)
+배포 구조에 대해서 설명합니다.
 
 # 🎥 Demo
 
@@ -161,4 +130,4 @@ AWS를 선정한 **구체적인 이유**가 있는데, 다음과 같습니다.
 
 ### 📌 UI Prototype
 
-![UI](https://github.com/dhslrl321/Finx-App/blob/master/images/ui.png)
+![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/mpng)
