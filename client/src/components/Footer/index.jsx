@@ -1,10 +1,19 @@
-import React from 'react'
-import { FaInstagram, FaFacebook, FaBlog } from 'react-icons/fa'
+import React from "react";
+import { FaInstagram, FaFacebook, FaBlog } from "react-icons/fa";
 import {
-  FooterContainer, FooterWrap, FooterLinksContainer,
-  FooterLinksWrapper, FooterLinkItems, FooterLinksTitle,
-  FooterLink, SocialIconLink, SocialLogo, SocialMediaWrap,
-  SocialIcons, SocialMedia, WebsiteRights
+  FooterContainer,
+  FooterWrap,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinkItems,
+  FooterLinksTitle,
+  FooterLink,
+  SocialIconLink,
+  SocialLogo,
+  SocialMediaWrap,
+  SocialIcons,
+  SocialMedia,
+  WebsiteRights,
 } from "./styles";
 
 const Footer = () => {
@@ -24,7 +33,10 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo>Bless Music studio</SocialLogo>
-            <WebsiteRights>블레스 뮤직 {new Date().getFullYear()} Copyright ⓒ Jangwonik All rights reserved.</WebsiteRights>
+            <WebsiteRights>
+              블레스 뮤직 {new Date().getFullYear()} Copyright ⓒ Jangwonik All
+              rights reserved.
+            </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" arial-label="Facebook">
                 <FaFacebook />
@@ -40,7 +52,7 @@ const Footer = () => {
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

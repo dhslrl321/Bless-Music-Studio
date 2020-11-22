@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
 import {
-  InfoContainer, InfoImgWrapper, Img,
-  InfoDescription, InfoTitle, InfoContent
+  InfoContainer,
+  InfoImgWrapper,
+  Img,
+  InfoDescription,
+  InfoTitle,
+  InfoContent,
 } from "./styles";
 
-
-const InfoSection = ({ title, description, left, img, darkMode, lightText }) => {
+const InfoSection = ({
+  title,
+  description,
+  left,
+  img,
+  darkMode,
+  lightText,
+}) => {
   return (
     <InfoContainer left={left} darkMode={darkMode}>
       <InfoImgWrapper>
@@ -16,7 +26,7 @@ const InfoSection = ({ title, description, left, img, darkMode, lightText }) => 
         <InfoDescription lightText={lightText}>{description}</InfoDescription>
       </InfoContent>
     </InfoContainer>
-  )
-}
+  );
+};
 
-export default InfoSection
+export default InfoSection;

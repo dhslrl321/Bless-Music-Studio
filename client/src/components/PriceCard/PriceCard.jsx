@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 import {
-  Container, ImageBall, Image, Title,
-  Button, Price, Detail, DetailWrapper
+  Container,
+  ImageBall,
+  Image,
+  Title,
+  Button,
+  Price,
+  Detail,
+  DetailWrapper,
 } from "./styles";
 const PriceCard = ({ data, changeCardFocus }) => {
   return (
@@ -20,7 +26,7 @@ const PriceCard = ({ data, changeCardFocus }) => {
         <Button onClick={() => changeCardFocus(data.id)}>Detail</Button>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default PriceCard
+export default PriceCard;

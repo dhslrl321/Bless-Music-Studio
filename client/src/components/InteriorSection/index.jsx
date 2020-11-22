@@ -1,10 +1,20 @@
-import React from 'react'
+import React from "react";
 import { rooms } from "./data";
 import {
-  InteriorContainer, InteriorContentWrapper, ImageWrapper,
-  InteriorHeader, ImageBallWrap, InteriorHeaderWrapper,
-  InteriorLine, ImageBall, InteriorSubtitle, Img, Description,
-  ImageViewer, RoomImg, ImageViewerHeader
+  InteriorContainer,
+  InteriorContentWrapper,
+  ImageWrapper,
+  InteriorHeader,
+  ImageBallWrap,
+  InteriorHeaderWrapper,
+  InteriorLine,
+  ImageBall,
+  InteriorSubtitle,
+  Img,
+  Description,
+  ImageViewer,
+  RoomImg,
+  ImageViewerHeader,
 } from "./styles";
 const InteriorSection = () => {
   return (
@@ -16,7 +26,7 @@ const InteriorSection = () => {
       </InteriorHeaderWrapper>
       <InteriorContentWrapper>
         <ImageBallWrap>
-          {rooms.map(room => (
+          {rooms.map((room) => (
             <>
               <ImageBall>
                 <Img src={room.image} />
@@ -26,16 +36,14 @@ const InteriorSection = () => {
           ))}
         </ImageBallWrap>
         <ImageWrapper>
-          <ImageViewerHeader>
-            자세히 보기
-          </ImageViewerHeader>
+          <ImageViewerHeader>자세히 보기</ImageViewerHeader>
           <ImageViewer>
             <RoomImg />
           </ImageViewer>
         </ImageWrapper>
       </InteriorContentWrapper>
     </InteriorContainer>
-  )
-}
+  );
+};
 
 export default InteriorSection;

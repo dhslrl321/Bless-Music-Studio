@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,8 +35,7 @@ export const Title = styled.h1`
 export const Price = styled.div`
   font-size: 1.5rem;
 `;
-export const DetailWrapper = styled.div`
-`;
+export const DetailWrapper = styled.div``;
 
 export const Detail = styled.div`
   margin: 13px 0;

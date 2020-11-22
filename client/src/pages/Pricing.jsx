@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
-import Sidebar from '../components/Sidebar/index'
-import Navbar from '../components/Navbar/index'
-import Footer from '../components/Footer/index'
-import PriceCardSection from '../components/PriceSection/PriceSection'
+import React, { useState } from "react";
+import Sidebar from "../components/Sidebar/index";
+import Navbar from "../components/Navbar/index";
+import Footer from "../components/Footer/index";
+import PriceCardSection from "../components/PriceSection/PriceSection";
 
 const Pricing = () => {
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggle = () => {
     setSidebarOpen(!sidebarOpen);
-  }
-
+  };
 
   return (
     <>
@@ -20,7 +18,7 @@ const Pricing = () => {
       <PriceCardSection />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default Pricing;

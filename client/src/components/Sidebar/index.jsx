@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 import { FaTimes } from "react-icons/fa";
 import {
-  SidebarContainer, SidebarMenu,
-  ExitIconWrap, SidebarLinks
+  SidebarContainer,
+  SidebarMenu,
+  ExitIconWrap,
+  SidebarLinks,
 } from "./styles";
 const Sidebar = ({ sidebarOpen, toggle }) => {
   return (
@@ -17,7 +19,7 @@ const Sidebar = ({ sidebarOpen, toggle }) => {
         <SidebarLinks to="faq">FAQ</SidebarLinks>
       </SidebarMenu>
     </SidebarContainer>
-  )
-}
+  );
+};
 
 export default Sidebar;

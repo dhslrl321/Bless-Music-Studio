@@ -7,7 +7,7 @@ export const InteriorContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  background: #FAFAFA;
+  background: #fafafa;
 `;
 
 export const InteriorHeaderWrapper = styled.div`
@@ -47,10 +47,10 @@ export const ImageBallWrap = styled.div`
   grid-gap: 30px;
   justify-content: center;
   margin-bottom: 50px;
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 780px) {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-  };
+  } ;
 `;
 
 export const ImageBall = styled.div`
@@ -70,7 +70,7 @@ export const Img = styled.img`
   border-radius: 40px;
   box-shadow: 2px 2px 2px gray;
   transition: 0.2s ease-in-out;
-  :hover{ 
+  :hover {
     width: 100px;
     height: 100px;
   }
@@ -88,7 +88,7 @@ export const ImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #FAFAFA;
+  background: #fafafa;
 `;
 
 export const ImageViewerHeader = styled.h1`
@@ -104,11 +104,11 @@ export const ImageViewer = styled.div`
   border-radius: 20px;
   box-shadow: 2px 2px 12px gray;
   margin-bottom: 200px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     width: 80%;
-    height: 252px
+    height: 252px;
   }
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     width: 90%;
     height: 220px;
     box-shadow: 1px 1px 5px gray;

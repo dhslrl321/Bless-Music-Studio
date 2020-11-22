@@ -8,7 +8,10 @@ export const InfoContainer = styled.div`
   flex-wrap: wrap;
   height: 600px;
 
-  /* background: ${({ darkMode }) => (darkMode ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)" : "#fff")}; */
+  /* background: ${({ darkMode }) =>
+    darkMode
+      ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)"
+      : "#fff"}; */
   background: ${({ darkMode }) => (darkMode ? "#FAFAFA" : "#fff")};
 `;
 

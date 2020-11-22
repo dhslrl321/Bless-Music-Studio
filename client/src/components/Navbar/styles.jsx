@@ -22,13 +22,13 @@ export const NavbarContainer = styled.div`
   z-index: 1;
 
   .link-items {
-    color: ${({ scrollNav }) => scrollNav ? "#000" : "#fff"};
+    color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
     border-bottom: 1px solid;
   }
 `;
 export const IconWrapper = styled.div`
   display: none;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: block;
     font-size: 1.3rem;
     cursor: pointer;
@@ -52,7 +52,7 @@ export const NavItem = styled.div`
 `;
 export const NavLinks = styled(Link)`
   font-size: 1.3rem;
-  &.active{
+  &.active {
     border: 1px solid;
   }
 `;

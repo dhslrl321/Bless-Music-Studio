@@ -1,17 +1,22 @@
-import React from 'react'
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import {
-  IconWrapper, Nav, NavLogo,
-  NavItem, NavLinks, NavMenu,
-  NavbarContainer
-} from './styles';
+  IconWrapper,
+  Nav,
+  NavLogo,
+  NavItem,
+  NavLinks,
+  NavMenu,
+  NavbarContainer,
+} from "./styles";
 const Navbar = ({ toggle, scrollNav }) => {
-
   return (
     <>
       <Nav>
         <NavbarContainer scrollNav={scrollNav}>
-          <NavLogo className="link-items" to="/">Bless Music Studio</NavLogo>
+          <NavLogo className="link-items" to="/">
+            Bless Music Studio
+          </NavLogo>
           <IconWrapper className="link-items" onClick={toggle}>
             <FaBars />
           </IconWrapper>
@@ -40,7 +45,7 @@ const Navbar = ({ toggle, scrollNav }) => {
         </NavbarContainer>
       </Nav>
     </>
-  )
-}
+  );
+};
 
 export default Navbar;

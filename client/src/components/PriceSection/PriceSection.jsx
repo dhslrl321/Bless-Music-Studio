@@ -1,20 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { priceData } from "./data";
 import {
-  PriceCardWrap, PriceContainer, PriceContent, PriceDetail,
-  PriceHeader, PriceLine, PriceTitle, DetailTable, DetailTitle
+  PriceCardWrap,
+  PriceContainer,
+  PriceContent,
+  PriceDetail,
+  PriceHeader,
+  PriceLine,
+  PriceTitle,
+  DetailTable,
+  DetailTitle,
 } from "./styles";
-import PriceCard from '../PriceCard/PriceCard';
+import PriceCard from "../PriceCard/PriceCard";
 
 const PriceCardSection = () => {
-
   const [cardFocus, setCardFocus] = useState(1);
   const [show, setShow] = useState(false);
 
   const changeCardFocus = (id) => {
     setCardFocus(id);
     setShow(!show);
-  }
+  };
 
   return (
     <PriceContainer>
@@ -24,11 +30,12 @@ const PriceCardSection = () => {
       </PriceHeader>
       <PriceContent>
         <PriceCardWrap>
-          {priceData.map(data => (
+          {priceData.map((data) => (
             <PriceCard
               key={data.id}
               data={data}
-              changeCardFocus={changeCardFocus} />
+              changeCardFocus={changeCardFocus}
+            />
           ))}
         </PriceCardWrap>
         <PriceDetail show={show}>
@@ -37,7 +44,7 @@ const PriceCardSection = () => {
         </PriceDetail>
       </PriceContent>
     </PriceContainer>
-  )
-}
+  );
+};
 
-export default PriceCardSection
+export default PriceCardSection;

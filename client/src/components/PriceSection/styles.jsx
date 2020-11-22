@@ -46,9 +46,9 @@ export const PriceDetail = styled.div`
   height: 0px;
   transition: 1s ease;
   color: white;
-  border: ${({ show }) => show ? "1px solid" : "none"};
-  height: ${({ show }) => show ? "300px" : "none"};
-  color: ${({ show }) => show ? "black" : "none"};
+  border: ${({ show }) => (show ? "1px solid" : "none")};
+  height: ${({ show }) => (show ? "300px" : "none")};
+  color: ${({ show }) => (show ? "black" : "none")};
 `;
 
 export const DetailTitle = styled.h1`

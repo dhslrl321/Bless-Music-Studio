@@ -1,17 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import {
-  Map, MapContainer, MapContent, HeaderSubtitle,
-  MapDiv, HeaderLine, HeaderText, MapHeader
+  Map,
+  MapContainer,
+  MapContent,
+  HeaderSubtitle,
+  MapDiv,
+  HeaderLine,
+  HeaderText,
+  MapHeader,
 } from "./styles";
 
 const { kakao } = window;
 
 const KakaoMapSection = () => {
   useEffect(() => {
-    const container = document.getElementById('map');
+    const container = document.getElementById("map");
     const options = {
       center: new kakao.maps.LatLng(37.505021, 126.763911),
-      level: 3
+      level: 3,
     };
 
     const map = new kakao.maps.Map(container, options);
@@ -27,7 +33,9 @@ const KakaoMapSection = () => {
     <MapContainer>
       <MapHeader>
         <HeaderText>Location</HeaderText>
-        <HeaderSubtitle>경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실</HeaderSubtitle>
+        <HeaderSubtitle>
+          경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실
+        </HeaderSubtitle>
         <HeaderLine></HeaderLine>
       </MapHeader>
       <MapContent>
@@ -36,7 +44,7 @@ const KakaoMapSection = () => {
         </MapDiv>
       </MapContent>
     </MapContainer>
-  )
-}
+  );
+};
 
-export default KakaoMapSection
+export default KakaoMapSection;
