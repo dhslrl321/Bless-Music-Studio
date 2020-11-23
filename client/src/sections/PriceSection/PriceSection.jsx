@@ -5,7 +5,6 @@ import {
   PriceContainer,
   PriceContent,
   PriceHeader,
-  PriceLine,
   PriceTitle,
   PriceDesc,
 } from "./styles";
@@ -23,7 +22,6 @@ const PriceCardSection = () => {
       <PriceHeader>
         <PriceTitle>Price</PriceTitle>
         <PriceDesc>블레스 음악 스튜디오의 가격을 확인해보세요!</PriceDesc>
-        <PriceLine />
       </PriceHeader>
       <PriceContent>
         <PriceCardWrap>

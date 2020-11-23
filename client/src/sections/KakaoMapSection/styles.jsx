@@ -25,11 +25,6 @@ export const HeaderSubtitle = styled.p`
   text-align: center;
 `;
 
-export const HeaderLine = styled.div`
-  width: 100%;
-  border: 1px solid #aaa;
-`;
-
 export const MapContent = styled.div`
   display: flex;
   align-items: center;

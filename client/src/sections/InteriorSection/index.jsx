@@ -7,7 +7,6 @@ import {
   InteriorHeader,
   ImageBallWrap,
   InteriorHeaderWrapper,
-  InteriorLine,
   ImageBall,
   InteriorSubtitle,
   Img,
@@ -22,13 +21,12 @@ const InteriorSection = () => {
       <InteriorHeaderWrapper>
         <InteriorHeader>Tour</InteriorHeader>
         <InteriorSubtitle>Bless Music Studio를 둘러보세요!</InteriorSubtitle>
-        <InteriorLine></InteriorLine>
       </InteriorHeaderWrapper>
       <InteriorContentWrapper>
         <ImageBallWrap>
           {rooms.map((room) => (
             <>
-              <ImageBall>
+              <ImageBall key={room.id}>
                 <Img src={room.image} />
                 <Description>{room.desc}</Description>
               </ImageBall>

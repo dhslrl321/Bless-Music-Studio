@@ -29,11 +29,6 @@ export const PriceDesc = styled.div`
   margin-bottom: 30px;
 `;
 
-export const PriceLine = styled.div`
-  width: 100%;
-  border: 1px solid #aaa;
-`;
-
 export const PriceContent = styled.div`
   width: 65%;
   display: flex;

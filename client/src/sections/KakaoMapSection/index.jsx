@@ -5,7 +5,6 @@ import {
   MapContent,
   HeaderSubtitle,
   MapDiv,
-  HeaderLine,
   HeaderText,
   MapHeader,
 } from "./styles";
@@ -36,7 +35,6 @@ const KakaoMapSection = () => {
         <HeaderSubtitle>
           경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실
         </HeaderSubtitle>
-        <HeaderLine></HeaderLine>
       </MapHeader>
       <MapContent>
         <MapDiv>

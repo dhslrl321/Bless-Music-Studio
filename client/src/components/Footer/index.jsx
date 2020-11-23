@@ -24,8 +24,8 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinksTitle>About Us</FooterLinksTitle>
-              <FooterLink to="/">내부</FooterLink>
-              <FooterLink to="/">위치</FooterLink>
+              <FooterLink to="/">Home</FooterLink>
+              <FooterLink to="/">Information</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinksTitle>Information</FooterLinksTitle>
