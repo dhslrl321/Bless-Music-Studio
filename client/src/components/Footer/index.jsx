@@ -24,9 +24,20 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinksTitle>About Us</FooterLinksTitle>
-              <FooterLink to="#">정보</FooterLink>
-              <FooterLink to="#">업적</FooterLink>
-              <FooterLink to="#">위치</FooterLink>
+              <FooterLink to="/">내부</FooterLink>
+              <FooterLink to="/">위치</FooterLink>
+            </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLinksTitle>Information</FooterLinksTitle>
+              <FooterLink to="/tour">Interior</FooterLink>
+              <FooterLink to="/tour">Location</FooterLink>
+              <FooterLink to="/tour">Address</FooterLink>
+            </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLinksTitle>Pricing</FooterLinksTitle>
+              <FooterLink to="/pricing">Resevation</FooterLink>
+              <FooterLink to="/pricing">Pricing</FooterLink>
+              <FooterLink to="/pricing">Refund Policy</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

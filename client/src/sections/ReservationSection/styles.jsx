@@ -27,4 +27,10 @@ export const ReservationColumn = styled.div`
 export const LogoImg = styled.img`
   width: 200px;
   border-radius: 30px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100px;
+  }
 `;

@@ -14,9 +14,10 @@ const PriceDetail = ({ show, priceData }) => {
     <PriceDetailContainer show={show}>
       <DetailTitle>Price Table</DetailTitle>
       <DetailWrapper>
-        <DetailTable>
+        <DetailTable show={show}>
           <PriceWrap>
-            <PriceTag>시간제</PriceTag> <Price>{priceData[0].price}</Price>
+            <PriceTag>{priceData[0].name} 시간제</PriceTag>{" "}
+            <Price>{priceData[0].price}</Price>
           </PriceWrap>
           <PriceWrap>
             <PriceTag>월 대여 3시간</PriceTag>{" "}
@@ -39,9 +40,10 @@ const PriceDetail = ({ show, priceData }) => {
             <Price>{priceData[0].dawn} 원</Price>
           </PriceWrap>
         </DetailTable>
-        <DetailTable>
+        <DetailTable show={show}>
           <PriceWrap>
-            <PriceTag>시간제</PriceTag> <Price>{priceData[1].price}</Price>
+            <PriceTag>{priceData[1].name} 시간제</PriceTag>{" "}
+            <Price>{priceData[1].price}</Price>
           </PriceWrap>
           <PriceWrap>
             <PriceTag>월 대여 3시간</PriceTag>{" "}
@@ -64,9 +66,10 @@ const PriceDetail = ({ show, priceData }) => {
             <Price>{priceData[1].dawn} 원</Price>
           </PriceWrap>
         </DetailTable>
-        <DetailTable>
+        <DetailTable show={show}>
           <PriceWrap>
-            <PriceTag>시간제</PriceTag> <Price>{priceData[2].price} 원</Price>
+            <PriceTag>{priceData[2].name} 시간제</PriceTag>{" "}
+            <Price>{priceData[2].price} 원</Price>
           </PriceWrap>
         </DetailTable>
       </DetailWrapper>

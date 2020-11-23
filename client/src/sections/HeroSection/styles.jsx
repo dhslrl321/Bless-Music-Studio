@@ -31,6 +31,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 150px;
   align-items: center;
   padding: 8px 24px;
   z-index: 3;

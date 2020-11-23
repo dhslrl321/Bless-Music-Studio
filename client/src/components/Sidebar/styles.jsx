@@ -11,10 +11,11 @@ export const SidebarContainer = styled.aside`
   justify-content: center;
   top: 0;
   left: 0;
-  opacity: ${({ sidebarOpen }) => (sidebarOpen ? "100%" : "0")};
+  opacity: ${({ sidebarOpen }) => (sidebarOpen ? "70%" : "0")};
   top: ${({ sidebarOpen }) => (sidebarOpen ? "0" : "-100%")};
   transition: 0.8s ease-in-out;
-  background: #0e0e0e;
+  background: black;
+
   color: #fff;
 `;
 
@@ -31,7 +32,7 @@ export const SidebarLinks = styled(Link)`
   justify-content: center;
   margin: 10px 0;
   color: #fff;
-  background: #01bf71;
+  background: gray;
   padding: 16px 64px;
   border-radius: 500px;
 

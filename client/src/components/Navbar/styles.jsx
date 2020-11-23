@@ -20,10 +20,9 @@ export const NavbarContainer = styled.div`
   padding: 0 24px;
   max-width: 1300px;
   z-index: 1;
-
+  height: 80px;
   .link-items {
     color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
-    border-bottom: 1px solid;
   }
 `;
 export const IconWrapper = styled.div`
@@ -37,7 +36,6 @@ export const IconWrapper = styled.div`
 export const NavLogo = styled(Link)`
   justify-self: flex-start;
   font-size: 1.5rem;
-  font-weight: bold;
 `;
 export const NavMenu = styled.div`
   display: flex;
@@ -51,7 +49,7 @@ export const NavItem = styled.div`
   height: 100%;
 `;
 export const NavLinks = styled(Link)`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   &.active {
     border: 1px solid;
   }

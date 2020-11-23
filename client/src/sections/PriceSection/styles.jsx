@@ -9,6 +9,7 @@ export const PriceContainer = styled.div`
   justify-content: center;
   background: #fafafa;
   padding-bottom: 350px;
+  padding-top: 80px;
 `;
 
 export const PriceHeader = styled.div`
@@ -43,8 +44,11 @@ export const PriceContent = styled.div`
 
 export const PriceCardWrap = styled.div`
   display: flex;
-  width: 800px;
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 30px;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
 `;

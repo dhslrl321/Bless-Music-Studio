@@ -1,5 +1,6 @@
 import React from "react";
-import Video from "../../videos/HeroMovie.mp4";
+import Sydney from "../../videos/sydney.mp4";
+
 import {
   HeroBackground,
   HeroContainer,
@@ -12,7 +13,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBackground>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg autoPlay loop muted src={Sydney} type="video/mp4" />
       </HeroBackground>
       <HeroContent>
         <HeroTitle>Bless Music Studio</HeroTitle>

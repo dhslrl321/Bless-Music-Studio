@@ -9,10 +9,11 @@ import {
   NavMenu,
   NavbarContainer,
 } from "./styles";
+
 const Navbar = ({ toggle, scrollNav }) => {
   return (
     <>
-      <Nav>
+      <Nav className="asdf">
         <NavbarContainer scrollNav={scrollNav}>
           <NavLogo className="link-items" to="/">
             Bless Music Studio

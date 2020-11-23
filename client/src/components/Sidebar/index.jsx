@@ -15,8 +15,7 @@ const Sidebar = ({ sidebarOpen, toggle }) => {
       <SidebarMenu>
         <SidebarLinks to="tour">Tour</SidebarLinks>
         <SidebarLinks to="pricing">Pricing</SidebarLinks>
-        <SidebarLinks to="reservation">Reservation</SidebarLinks>
-        <SidebarLinks to="faq">FAQ</SidebarLinks>
+        <SidebarLinks to="event">Events</SidebarLinks>
       </SidebarMenu>
     </SidebarContainer>
   );
