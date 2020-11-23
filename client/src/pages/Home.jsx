@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar/index";
 import Navbar from "../components/Navbar/index";
-import HeroSection from "../components/HeroSection/index";
-import InfoSection from "../components/InfoSection/index";
-import {
-  infoData1,
-  infoData2,
-  infoData3,
-} from "../components/InfoSection/data";
+import HeroSection from "../sections/HeroSection/index";
+import InfoSection from "../sections/InfoSection/index";
+import { infoData1, infoData2, infoData3 } from "../sections/InfoSection/data";
 import booking from "../images/booking.svg";
 import music from "../images/music.svg";
 import think from "../images/think.svg";

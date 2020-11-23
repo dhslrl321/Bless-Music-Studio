@@ -5,16 +5,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 300px;
-  height: 500px;
+  width: 250px;
+  height: 450px;
   border-radius: 30px;
   box-shadow: 2px 2px 12px gray;
   color: black;
   transition: 0.1s ease-in-out;
   cursor: pointer;
   :hover {
-    width: 310px;
-    height: 510px;
+    width: 260px;
+    height: 470px;
     box-shadow: 3px 3px 12px black;
   }
 `;
@@ -33,11 +33,12 @@ export const Title = styled.h1`
 `;
 
 export const Price = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 `;
 export const DetailWrapper = styled.div``;
 
 export const Detail = styled.div`
+  font-size: 0.8rem;
   margin: 13px 0;
 `;
 

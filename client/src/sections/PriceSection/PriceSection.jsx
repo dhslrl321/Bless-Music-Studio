@@ -4,21 +4,17 @@ import {
   PriceCardWrap,
   PriceContainer,
   PriceContent,
-  PriceDetail,
   PriceHeader,
   PriceLine,
   PriceTitle,
-  DetailTable,
-  DetailTitle,
+  PriceDesc,
 } from "./styles";
-import PriceCard from "../PriceCard/PriceCard";
+import PriceCard from "../../components/PriceCard/index";
+import PriceDetail from "../../components/PriceDetail";
 
 const PriceCardSection = () => {
-  const [cardFocus, setCardFocus] = useState(1);
   const [show, setShow] = useState(false);
-
-  const changeCardFocus = (id) => {
-    setCardFocus(id);
+  const toggle = () => {
     setShow(!show);
   };
 
@@ -26,22 +22,16 @@ const PriceCardSection = () => {
     <PriceContainer>
       <PriceHeader>
         <PriceTitle>Price</PriceTitle>
+        <PriceDesc>블레스 음악 스튜디오의 가격을 확인해보세요!</PriceDesc>
         <PriceLine />
       </PriceHeader>
       <PriceContent>
         <PriceCardWrap>
           {priceData.map((data) => (
-            <PriceCard
-              key={data.id}
-              data={data}
-              changeCardFocus={changeCardFocus}
-            />
+            <PriceCard key={data.id} toggle={toggle} data={data} />
           ))}
         </PriceCardWrap>
-        <PriceDetail show={show}>
-          <DetailTitle>상세 요금</DetailTitle>
-          <DetailTable>{cardFocus} 번 데이터 테이블...</DetailTable>
-        </PriceDetail>
+        <PriceDetail show={show} priceData={priceData} />
       </PriceContent>
     </PriceContainer>
   );

@@ -9,7 +9,7 @@ import {
   Detail,
   DetailWrapper,
 } from "./styles";
-const PriceCard = ({ data, changeCardFocus }) => {
+const PriceCard = ({ toggle, data }) => {
   return (
     <>
       <Container>
@@ -23,7 +23,7 @@ const PriceCard = ({ data, changeCardFocus }) => {
           <Detail>{data.desc2}</Detail>
           <Detail>{data.desc3}</Detail>
         </DetailWrapper>
-        <Button onClick={() => changeCardFocus(data.id)}>Detail</Button>
+        <Button onClick={toggle}>Detail</Button>
       </Container>
     </>
   );

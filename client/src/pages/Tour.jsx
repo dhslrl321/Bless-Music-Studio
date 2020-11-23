@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import InteriorSection from "../components/InteriorSection";
-import KakaoMapSection from "../components/KakaoMapSection";
+import InteriorSection from "../sections/InteriorSection";
+import KakaoMapSection from "../sections/KakaoMapSection";
 import Footer from "../components/Footer/index";
 
 const Tour = () => {
