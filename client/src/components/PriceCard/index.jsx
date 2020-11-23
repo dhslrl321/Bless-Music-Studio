@@ -5,7 +5,6 @@ import {
   Image,
   Title,
   Button,
-  Price,
   Detail,
   DetailWrapper,
 } from "./styles";
@@ -17,7 +16,6 @@ const PriceCard = ({ toggle, data }) => {
           <Image src={data.image}></Image>
         </ImageBall>
         <Title>{data.name}</Title>
-        <Price>{data.price}</Price>
         <DetailWrapper>
           <Detail>{data.desc}</Detail>
           <Detail>{data.desc2}</Detail>

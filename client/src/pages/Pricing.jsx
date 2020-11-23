@@ -5,6 +5,7 @@ import Footer from "../components/Footer/index";
 import PriceCardSection from "../sections/PriceSection/PriceSection";
 import RefundContainer from "../components/Refund";
 import ReservationSection from "../sections/ReservationSection";
+import TopBg from "../components/TopBg/TopBg";
 
 const Pricing = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,6 +18,7 @@ const Pricing = () => {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggle={toggle} />
       <Navbar toggle={toggle} scrollNav={true} />
+      <TopBg />
       <PriceCardSection />
       <RefundContainer />
       <ReservationSection />

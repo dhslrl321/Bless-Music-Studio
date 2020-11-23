@@ -31,10 +31,6 @@ export const Image = styled.img`
 export const Title = styled.h1`
   font-size: 1rem;
 `;
-
-export const Price = styled.div`
-  font-size: 1.2rem;
-`;
 export const DetailWrapper = styled.div``;
 
 export const Detail = styled.div`

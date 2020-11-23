@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const PriceContainer = styled.div`
   height: 100%;
   width: 100%;
-  margin-top: -80px;
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +43,7 @@ export const PriceContent = styled.div`
 
 export const PriceCardWrap = styled.div`
   display: flex;
-  width: 100%;
+  width: 800px;
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 30px;

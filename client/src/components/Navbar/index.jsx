@@ -23,22 +23,17 @@ const Navbar = ({ toggle, scrollNav }) => {
           <NavMenu>
             <NavItem>
               <NavLinks className="link-items" to="/tour">
-                Tour
+                둘러보기
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks className="link-items" to="/pricing">
-                Pricing
+                가격 및 예약
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks className="link-items" to="/reservation">
-                Reservation
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks className="link-items" to="/faq">
-                FAQ
+              <NavLinks className="link-items" to="/event">
+                이벤트
               </NavLinks>
             </NavItem>
           </NavMenu>

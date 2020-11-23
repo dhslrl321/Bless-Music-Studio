@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const InteriorContainer = styled.div`
   height: 100%;
-  margin-top: -80px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -12,7 +11,6 @@ export const InteriorContainer = styled.div`
 
 export const InteriorHeaderWrapper = styled.div`
   width: 65%;
-  margin-top: 100px;
 `;
 
 export const InteriorHeader = styled.h1`

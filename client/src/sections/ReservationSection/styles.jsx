@@ -24,39 +24,7 @@ export const ReservationColumn = styled.div`
   align-items: center;
 `;
 
-export const NaverButton = styled.div`
-  width: 130px;
-  height: 50px;
+export const LogoImg = styled.img`
+  width: 200px;
   border-radius: 30px;
-  background: #2db400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    color: white;
-  }
-`;
-
-export const Logo = styled.img`
-  margin: 30px 0;
-  width: 50%;
-  height: auto;
-`;
-
-export const KakaoButton = styled.div`
-  width: 130px;
-  height: 50px;
-  border-radius: 30px;
-  background: #f7e600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ALink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 `;
