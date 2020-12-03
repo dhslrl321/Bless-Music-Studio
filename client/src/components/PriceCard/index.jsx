@@ -4,11 +4,10 @@ import {
   ImageBall,
   Image,
   Title,
-  Button,
   Detail,
   DetailWrapper,
 } from "./styles";
-const PriceCard = ({ toggle, data }) => {
+const PriceCard = ({ data }) => {
   return (
     <>
       <Container>
@@ -21,7 +20,6 @@ const PriceCard = ({ toggle, data }) => {
           <Detail>{data.desc2}</Detail>
           <Detail>{data.desc3}</Detail>
         </DetailWrapper>
-        <Button onClick={toggle}>Detail</Button>
       </Container>
     </>
   );

@@ -8,10 +8,6 @@ export const InfoContainer = styled.div`
   flex-wrap: wrap;
   height: 600px;
 
-  /* background: ${({ darkMode }) =>
-    darkMode
-      ? "linear-gradient(-130deg, #a8edea 0%, #fed6e3 100%)"
-      : "#fff"}; */
   background: ${({ darkMode }) => (darkMode ? "#FAFAFA" : "#fff")};
 `;
 
@@ -21,7 +17,7 @@ export const InfoImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 150px;
+  margin: 0px 30px;
   @media screen and (max-width: 760px) {
     margin: 0px 30px;
   }
@@ -39,7 +35,7 @@ export const Img = styled.img`
 
 export const InfoContent = styled.div`
   max-width: 800px;
-  margin: 0 150px;
+  margin: 0 100px;
   @media screen and (max-width: 760px) {
     margin: 0px 30px;
   }
@@ -53,7 +49,7 @@ export const InfoTitle = styled.h1`
   color: ${({ lightText }) => (lightText ? "#ccc5af" : "#000")};
   font-size: 2rem;
   text-align: center;
-  margin: 30px 0;
+  margin: 10px 0;
   @media screen and (max-width: 760px) {
     font-size: 22px;
   }

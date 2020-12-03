@@ -9,12 +9,12 @@ import {
   Price,
 } from "./styles";
 
-const PriceDetail = ({ show, priceData }) => {
+const PriceDetail = ({ priceData }) => {
   return (
-    <PriceDetailContainer show={show}>
+    <PriceDetailContainer>
       <DetailTitle>Price Table</DetailTitle>
       <DetailWrapper>
-        <DetailTable show={show}>
+        <DetailTable>
           <PriceWrap>
             <PriceTag>{priceData[0].name} 시간제</PriceTag>{" "}
             <Price>{priceData[0].price}</Price>
@@ -40,7 +40,7 @@ const PriceDetail = ({ show, priceData }) => {
             <Price>{priceData[0].dawn} 원</Price>
           </PriceWrap>
         </DetailTable>
-        <DetailTable show={show}>
+        <DetailTable>
           <PriceWrap>
             <PriceTag>{priceData[1].name} 시간제</PriceTag>{" "}
             <Price>{priceData[1].price}</Price>
@@ -66,7 +66,7 @@ const PriceDetail = ({ show, priceData }) => {
             <Price>{priceData[1].dawn} 원</Price>
           </PriceWrap>
         </DetailTable>
-        <DetailTable show={show}>
+        <DetailTable>
           <PriceWrap>
             <PriceTag>{priceData[2].name} 시간제</PriceTag>{" "}
             <Price>{priceData[2].price} 원</Price>

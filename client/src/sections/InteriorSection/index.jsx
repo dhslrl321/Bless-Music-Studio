@@ -3,7 +3,6 @@ import { rooms } from "./data";
 import {
   InteriorContainer,
   InteriorContentWrapper,
-  ImageWrapper,
   InteriorHeader,
   ImageBallWrap,
   InteriorHeaderWrapper,
@@ -11,9 +10,6 @@ import {
   InteriorSubtitle,
   Img,
   Description,
-  ImageViewer,
-  RoomImg,
-  ImageViewerHeader,
 } from "./styles";
 const InteriorSection = () => {
   return (
@@ -33,12 +29,6 @@ const InteriorSection = () => {
             </>
           ))}
         </ImageBallWrap>
-        <ImageWrapper>
-          <ImageViewerHeader>자세히 보기</ImageViewerHeader>
-          <ImageViewer>
-            <RoomImg />
-          </ImageViewer>
-        </ImageWrapper>
       </InteriorContentWrapper>
     </InteriorContainer>
   );

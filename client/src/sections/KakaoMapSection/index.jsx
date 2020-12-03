@@ -8,6 +8,7 @@ import {
   HeaderText,
   MapHeader,
 } from "./styles";
+import PlatformButton from "../../components/PlatformButton/index";
 
 const { kakao } = window;
 
@@ -40,6 +41,11 @@ const KakaoMapSection = () => {
         <MapDiv>
           <Map id="map"></Map>
         </MapDiv>
+        <PlatformButton
+          text="카카오 맵"
+          url="http://kko.to/w1pi-KbDH"
+          isKakao={true}
+        />
       </MapContent>
     </MapContainer>
   );

@@ -18,8 +18,8 @@ export const Container = styled.div`
     height: 470px;
     box-shadow: 3px 3px 12px black;
   }
-  @media screen and (max-width: 768px) {
-    width: 180px;
+  @media screen and (max-width: 750px) {
+    width: 150px;
     height: 320px;
     :hover {
       width: 190px;
@@ -47,14 +47,14 @@ export const Image = styled.img`
   border-radius: 40px;
   box-shadow: 2px 2px 12px gray;
   @media screen and (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
   }
   @media screen and (max-width: 480px) {
-    width: 40px;
-    height: 40px;
-    border-radius: 14px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
   }
 `;
 
@@ -74,32 +74,5 @@ export const Detail = styled.div`
     display: none;
   }
   @media screen and (max-width: 480px) {
-  }
-`;
-
-export const Button = styled.button`
-  width: 100px;
-  height: 30px;
-  border-radius: 20px;
-  border: none;
-  color: black;
-  cursor: pointer;
-  outline: none;
-  :hover {
-    width: 105px;
-    height: 34px;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 85px;
-    :hover {
-      width: 90px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    width: 75px;
-    :hover {
-      width: 80px;
-    }
   }
 `;

@@ -2,8 +2,7 @@ import styled from "styled-components";
 export const PriceDetailContainer = styled.div`
   transition: 0.5s ease;
   color: white;
-  opacity: ${({ show }) => (show ? "100%" : "0")};
-  height: ${({ show }) => (show ? "100%" : "0")};
+  height: 100%;
 `;
 
 export const DetailTitle = styled.h1`
@@ -13,14 +12,12 @@ export const DetailTitle = styled.h1`
   margin: 10px 0;
 `;
 export const DetailWrapper = styled.div`
-  /* display: ${({ show }) => (show ? "flex" : "none")}; */
   display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    z-index: 10;
   }
   @media screen and (max-width: 480px) {
   }

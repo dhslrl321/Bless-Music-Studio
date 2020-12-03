@@ -34,6 +34,7 @@ export const InteriorLine = styled.div`
 
 export const InteriorContentWrapper = styled.div`
   width: 100%;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,39 +81,3 @@ export const Description = styled.p`
   color: gray;
   margin-top: 10px;
 `;
-
-export const ImageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #fafafa;
-`;
-
-export const ImageViewerHeader = styled.h1`
-  margin: 50px 0;
-  font-size: 2rem;
-  color: #444;
-`;
-
-export const ImageViewer = styled.div`
-  width: 60%;
-  height: 460px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 2px 2px 12px gray;
-  margin-bottom: 200px;
-  @media screen and (max-width: 768px) {
-    width: 80%;
-    height: 252px;
-  }
-  @media screen and (max-width: 480px) {
-    width: 90%;
-    height: 220px;
-    box-shadow: 1px 1px 5px gray;
-  }
-`;
-
-export const RoomImg = styled.img``;

@@ -31,6 +31,7 @@ export const PriceDesc = styled.div`
 
 export const PriceContent = styled.div`
   width: 65%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +43,7 @@ export const PriceCardWrap = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 30px;
+  height: 600px;
   @media screen and (max-width: 768px) {
   }
   @media screen and (max-width: 480px) {

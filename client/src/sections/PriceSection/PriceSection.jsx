@@ -12,11 +12,6 @@ import PriceCard from "../../components/PriceCard/index";
 import PriceDetail from "../../components/PriceDetail";
 
 const PriceCardSection = () => {
-  const [show, setShow] = useState(false);
-  const toggle = () => {
-    setShow(!show);
-  };
-
   return (
     <PriceContainer>
       <PriceHeader>
@@ -26,11 +21,11 @@ const PriceCardSection = () => {
       <PriceContent>
         <PriceCardWrap>
           {priceData.map((data) => (
-            <PriceCard key={data.id} toggle={toggle} data={data} />
+            <PriceCard key={data.id} data={data} />
           ))}
         </PriceCardWrap>
-        <PriceDetail show={show} priceData={priceData} />
       </PriceContent>
+      <PriceDetail priceData={priceData} />
     </PriceContainer>
   );
 };
