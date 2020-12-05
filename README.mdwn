@@ -62,17 +62,20 @@
 
 ### 📌 SEO 검색 엔진 최적화
 
-검색엔진 최적화를 진행함
+검색 엔진 최적화 예정
 
-### 📌 Server Side Rendering
+### 📌 Docker와 Docker-Compose으로 Blue-Green 배포 환경
 
-서버사이드 렌더링을 진행함
+Blue-Green 배포를 위해서 Docker와 Docker-Compose로 `docker-compose.blue.yml`과 `docker-compose.green.yml`으로 서로 다르게 관리
 
-### 📌 Nginx 와 무중단 배포
+### 📌 Nginx 의 로드 밸런싱
 
-무중단 배포를 진행함
+Blue-Green Update를 위한 로드 밸런싱으로 Event-Driven인 Nginx를 사용함.
 
-### 📌 Aws S3
+### 📌 CI-CD에 대한 고민
+
+잦은 업데이트와 이벤트를 게시해야하는 상황이라 배포가 많이 이루어진다.
+그래서 Build가 잦아질 것을 대비해 CI CD를 도입하기로 하였다.
 
 # ⛳️ 프로젝트 소개
 
@@ -81,20 +84,18 @@
 ![Tech](https://github.com/dhslrl321/Finx-App/blob/master/ima)
 
 - **Front-End**
-- - Context API
+- - React Hooks
 - - styled-Components
 - - styled-reset
 - - react-scroll
 - - React-Router-Dom
-- - Reactive Styling
+- - Reactive Web Design (Web, Tablet, Mobile Phone) ver
 - - Kakao Open API
-
-- **Server Side Rendering**
-- - Next.js
 
 - **Infrastructure**
 - - AWS EC2
 - - AWS S3
+- - AWS CodeDeploy
 
 - **DevOps**
 - - Nginx
@@ -102,8 +103,7 @@
 - - Docker
 
 - **Etc**
-- - Git / Github / Github Pages
-- - OAuth
+- - Git / Github
 - - Rest API
 - - Javascript Object Notation
 
@@ -127,7 +127,8 @@
 4. 사용 유의 사항 정보 제공
 5. 이용 요금 정보 제공
 6. 예약 정보 확인
-7. Footer
+7. 이벤트
+8. Footer
 
 ### 📌 UI Prototype
 
