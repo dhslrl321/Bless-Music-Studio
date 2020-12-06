@@ -9,8 +9,8 @@ branches:
   only:
     - master
 before_deploy: # 배포하기전 하는 작업들
-  - cd ..
   - rm -rf node_modules # travis가 설치한 node_moduels를 삭제
+  - cd ..
   - zip -r Bless-Music-Studio * # node-koa-server 라는 이름으로 zip 파일 생성
   - mkdir -p deploy # deploy 라는 디렉터리를 만듬
   - mv Bless-Music-Studio.zip deploy/Bless-Music-Studio.zip # deploy 디렉터리로 Bless-Music-Studio.zip 파일을 이동
