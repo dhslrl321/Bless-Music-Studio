@@ -1,6 +1,6 @@
 🎧🎹🎼
 
-#### Bless-Music-Studio [![Build Status](https://travis-ci.com/dhslrl321/Bless-Music-Studio.svg?branch=master)](https://travis-ci.com/dhslrl321/Bless-Music-Studio)
+#### Bless-Music-Studio
 
 > 본 프로젝트는 블레스 뮤직 스튜디오의 공식 홈페이지를 제작하며 사용했던 기술들과 구조에 대해서 나타내고 있습니다.
 
@@ -10,7 +10,7 @@
 
 ---
 
-# <center> 🎹 Bless-Music-Studio 🎹 </center>
+# <center> 🎹 Bless-Music-Studio 🎹 </center> [![Build Status](https://travis-ci.com/dhslrl321/Bless-Music-Studio.svg?branch=master)](https://travis-ci.com/dhslrl321/Bless-Music-Studio)
 
 # 📝목차
 
