@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  node-koa-server:
+    image: bless-music-studio-image
+    volumes:
+      - /home/ec2-user/deploy/bless-music-studio:/deploy/bless-music-studio
+    ports:
+      - "3001:3000"
