@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /deploy/bless-music-studio/client
+cd /deploy/Bless-music-studio/client
 
 npm install
 npm start
