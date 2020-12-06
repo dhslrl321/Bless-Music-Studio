@@ -3,6 +3,7 @@ node_js:
   - "10.14" # node_js에 버전 10.14
 before_install: # 패키지를 다운로드 받기 전
   - npm update # npm 패키지를 업데이트
+  - cd ./client
 branches:
   only:
     - master
