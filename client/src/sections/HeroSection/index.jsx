@@ -1,5 +1,5 @@
 import React from "react";
-import Sydney from "../../videos/sydney.mp4";
+import Sydney from "../../videos/sydney2.mp4";
 
 import {
   HeroBackground,
