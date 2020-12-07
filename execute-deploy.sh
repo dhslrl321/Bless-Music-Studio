@@ -12,4 +12,5 @@ cp -f ./start-server.sh /home/ec2-user/docker-image
 
 cd /home/ec2-user/docker-image
 sudo chmod +x ./deploy.sh
+sudo chmod +x ./start-server.sh
 ./deploy.sh > /dev/null 2> /dev/null < /dev/null &
