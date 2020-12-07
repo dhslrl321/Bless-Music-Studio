@@ -18,7 +18,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroTitle>Bless Music Studio</HeroTitle>
         <HeroDescription>
-          Bless Music Studio에서 당신의 꿈을 키워보세요.
+          Bless Music Studio에서 당신의 꿈을 키워보세요. (up)
         </HeroDescription>
       </HeroContent>
     </HeroContainer>
