@@ -23,14 +23,14 @@
 3. ### [What is Challenging](#-What-is-Challenging)
 
 - - 3-1 [SEO 검색 엔진 최적화](#-SEO-검색-엔진-최적화)
-- - 3-2 [Server Side Rendering](#-Server-Side-Rendering)
-- - 3-3 [Nginx와 무중단 배포](#-Nginx-와-무중단-배포)
-- - 3-4 [Aws S3](#-Aws-S3)
+- - 3-2 [Nginx와 무중단 배포](#-Nginx-와-무중단-배포)
+- - 3-3 [Aws S3](#-Aws-S3)
 
 4. ### [프로젝트 소개](#-프로젝트-소개)
 
 - - 4-1 [사용 기술](#-사용-기술)
-- - 4-2 [배포 구조](#-배포-구조)
+- - 4-2 [CI CD Pipeline](#-CI-CD-Pipeline)
+- - 4-3 [배포 구조](#-배포-구조)
 
 5. ### [User Interface](#-User-Interface)
 
@@ -56,32 +56,35 @@
 
 ### 📌 서비스 목적
 
-**검색 엔진 최적화(SEO)**를 통해 사용자들에게 단순 검색으로 피아노 연습실의 정보를 **노출**하기 위한 목적으로 제작된 프로젝트입니다.
+**검색 엔진 최적화**를 통해 사용자들에게 단순 검색으로 피아노 연습실의 정보를 **노출**하기 위한 목적으로 제작된 프로젝트입니다.
 
 # 👩🏻‍💻 What is Challenging
 
+### [주니어 개발자가 CI CD 그리고 무중단 배포에서 살아남기](https://velog.io/@programador/주니어-개발자가-Travis와-AWS-CodeDeploy로-CI-CD-사이에서-살아남기) @velog
+
 ### 📌 SEO 검색 엔진 최적화
 
-검색 엔진 최적화 예정
+피아노 연습실을 홍보하는 것이 **가장 큰 목표**!
 
-### 📌 Docker와 Docker-Compose으로 Blue-Green 배포 환경
+검색 엔진 최적화를 통해서 검색 엔진을 이용하는 사용자들에게 많은 노출이 되어야 합니다.
+현재 진행중인 도전 과제로 **열심히** 준비중입니다.
 
-Blue-Green 배포를 위해서 Docker와 Docker-Compose로 `docker-compose.blue.yml`과 `docker-compose.green.yml`으로 서로 다르게 관리
+### 📌 Nginx 와 무중단 배포 ( Clear ! ✔️ )
 
-### 📌 Nginx 의 로드 밸런싱
+언제 어디서 우리 사촌 누나의 고객님이 검색할지 모른다 !!
 
-Blue-Green Update를 위한 로드 밸런싱으로 Event-Driven인 Nginx를 사용함.
+Blue-Green Update를 이용해서 무중단으로 사촌 누나를 돈벌게 해주자!
 
-### 📌 CI-CD에 대한 고민
+### 📌 CI-CD에 대한 고민 ( Clear ! ✔️ )
 
-잦은 업데이트와 이벤트를 게시해야하는 상황이라 배포가 많이 이루어진다.
-그래서 Build가 잦아질 것을 대비해 CI CD를 도입하기로 하였다.
+사이트를 통한 이벤트를 자주 게시해야하는 상황입니다.  
+그에 따라 자동적으로 배포가 많이 이루어지는데, 이 과정을 자동화 하여 더 성장해보기로 했습니다.
 
 # ⛳️ 프로젝트 소개
 
 ### 📌 사용 기술
 
-![Tech](https://github.com/dhslrl321/Finx-App/blob/master/ima)
+![Tech](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/tech.png)
 
 - **Front-End**
 - - React Hooks
@@ -93,31 +96,30 @@ Blue-Green Update를 위한 로드 밸런싱으로 Event-Driven인 Nginx를 사�
 - - Kakao Open API
 
 - **Infrastructure**
-- - AWS EC2
+- - AWS EC2 t2.small
 - - AWS S3
 - - AWS CodeDeploy
 
 - **DevOps**
 - - Nginx
 - - Travis CI
-- - Docker
+- - Docker-Compose
 
 - **Etc**
 - - Git / Github
-- - Rest API
 - - Javascript Object Notation
 
-### 📌 서비스 아키텍처
+### 📌 CI CD Pipeline
 
-![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/mpng)
-서비스 아키텍쳐에 대해서 설명합니다.
+![cicd](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/pipeline.png)
 
 ### 📌 배포 구조
 
-![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/mpng)
-배포 구조에 대해서 설명합니다.
+![deploy](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/deploy.png)
 
 # 🎥 Demo
+
+![mainSection](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/main.png)
 
 ### 📌 Contents List
 
@@ -132,4 +134,4 @@ Blue-Green Update를 위한 로드 밸런싱으로 Event-Driven인 Nginx를 사�
 
 ### 📌 UI Prototype
 
-![UI](https://github.com/dhslrl321/Bless-Music-Studio/tree/master/images)
+![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/ui.png)
