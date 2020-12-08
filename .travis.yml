@@ -1,45 +1,45 @@
-language: node_js # 언어는 node_js
-node_js:
-  - "10.14"
-before_install:
-  - npm update
-  - npm install
-  - cd ./client
-branches:
-  only:
-    - master
-before_deploy:
-  - rm -rf node_modules
-  - cd ..
-  - zip -r Bless-Music-Studio *
-  - mkdir -p deploy
-  - mv Bless-Music-Studio.zip deploy/Bless-Music-Studio.zip
-deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: bless-server-ci-cd-bucket
-    region: ap-northeast-2
-    skip_cleanup: true
-    local_dir: deploy
-    wait-until-deployed: true
-    on:
-      repo: dhslrl321/Bless-Music-Studio
-      branch: master
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: bless-server-ci-cd-bucket
-    key: Bless-Music-Studio.zip
-    bundle_type: zip
-    application: Bless-Music-Studio-ci-cd
-    deployment_group: Bless-Music-Studio-deploy-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-    on:
-      repo: dhslrl321/Bless-Music-Studio
-      branch: master
-notifications:
-  email:
-    recipients:
-      - dhslrl321@gmail.com
+# language: node_js # 언어는 node_js
+# node_js:
+#   - "10.14"
+# before_install:
+#   - npm update
+#   - npm install
+#   - cd ./client
+# branches:
+#   only:
+#     - master
+# before_deploy:
+#   - rm -rf node_modules
+#   - cd ..
+#   - zip -r Bless-Music-Studio *
+#   - mkdir -p deploy
+#   - mv Bless-Music-Studio.zip deploy/Bless-Music-Studio.zip
+# deploy:
+#   - provider: s3
+#     access_key_id: $AWS_ACCESS_KEY
+#     secret_access_key: $AWS_SECRET_KEY
+#     bucket: bless-server-ci-cd-bucket
+#     region: ap-northeast-2
+#     skip_cleanup: true
+#     local_dir: deploy
+#     wait-until-deployed: true
+#     on:
+#       repo: dhslrl321/Bless-Music-Studio
+#       branch: master
+#   - provider: codedeploy
+#     access_key_id: $AWS_ACCESS_KEY
+#     secret_access_key: $AWS_SECRET_KEY
+#     bucket: bless-server-ci-cd-bucket
+#     key: Bless-Music-Studio.zip
+#     bundle_type: zip
+#     application: Bless-Music-Studio-ci-cd
+#     deployment_group: Bless-Music-Studio-deploy-group
+#     region: ap-northeast-2
+#     wait-until-deployed: true
+#     on:
+#       repo: dhslrl321/Bless-Music-Studio
+#       branch: master
+# notifications:
+#   email:
+#     recipients:
+#       - dhslrl321@gmail.com
