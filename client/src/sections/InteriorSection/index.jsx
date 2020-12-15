@@ -11,6 +11,8 @@ import {
   Img,
   Description,
 } from "./styles";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import { SliderData } from "../../components/ImageSlider/SliderData";
 const InteriorSection = () => {
   return (
     <InteriorContainer>
@@ -20,15 +22,16 @@ const InteriorSection = () => {
       </InteriorHeaderWrapper>
       <InteriorContentWrapper>
         <ImageBallWrap>
-          {rooms.map((room) => (
+          {rooms.map((room, index) => (
             <>
-              <ImageBall key={room.id}>
+              <ImageBall key={index}>
                 <Img src={room.image} />
                 <Description>{room.desc}</Description>
               </ImageBall>
             </>
           ))}
         </ImageBallWrap>
+        <ImageSlider slides={SliderData} />
       </InteriorContentWrapper>
     </InteriorContainer>
   );

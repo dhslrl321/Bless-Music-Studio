@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InteriorContainer = styled.div`
-  height: 100%;
+  height: 1200px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ export const InteriorLine = styled.div`
 
 export const InteriorContentWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,10 +47,10 @@ export const ImageBallWrap = styled.div`
   grid-template-rows: repeat(2, 100px);
   grid-gap: 30px;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 190px;
   @media screen and (max-width: 780px) {
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
   } ;
 `;
 
@@ -74,6 +74,14 @@ export const Img = styled.img`
   :hover {
     width: 100px;
     height: 100px;
+  }
+  @media screen and (max-width: 780px) {
+    width: 60px;
+    height: 60px;
+    :hover {
+      width: 80px;
+      height: 80px;
+    }
   }
 `;
 

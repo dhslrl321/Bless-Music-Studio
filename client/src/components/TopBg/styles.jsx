@@ -8,7 +8,8 @@ export const TopBgContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: -80px;
-  background: #afafaf;
+  /* background: #b8c9d2; */
+  background: linear-gradient(182deg, #bbc9d1, #a1bbcb);
   color: white;
   @media screen and (max-width: 768px) {
     div {
