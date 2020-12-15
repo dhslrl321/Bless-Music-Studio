@@ -38,7 +38,8 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: 56px;
+  font-size: 50px;
+  font-weight: normal;
   text-align: center;
   margin: 10px 0;
 

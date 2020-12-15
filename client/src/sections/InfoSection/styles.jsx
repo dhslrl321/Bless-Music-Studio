@@ -17,7 +17,7 @@ export const InfoImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 30px;
+  margin: 0px 130px;
   @media screen and (max-width: 760px) {
     margin: 0px 30px;
   }
@@ -35,7 +35,7 @@ export const Img = styled.img`
 
 export const InfoContent = styled.div`
   max-width: 800px;
-  margin: 0 100px;
+  margin: 0 130px;
   @media screen and (max-width: 760px) {
     margin: 0px 30px;
   }

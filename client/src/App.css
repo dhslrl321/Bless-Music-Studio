@@ -3,7 +3,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "jua";
 }
 a {
   color: #000;
+}
+
+@font-face {
+  src: url("./font/BMJUA_otf.otf");
+  font-family: "jua";
 }
