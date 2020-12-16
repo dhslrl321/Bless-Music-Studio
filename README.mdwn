@@ -134,4 +134,4 @@ Blue-Green Update를 이용해서 무중단으로 사촌 누나를 돈벌게 해
 
 ### 📌 UI Prototype
 
-![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/ui.png)
+![UI](https://github.com/dhslrl321/Bless-Music-Studio/blob/master/images/xd.png)
