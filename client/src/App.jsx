@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Tour from "./pages/Tour";
 import Pricing from "./pages/Pricing";
 import Event from "./pages/Event";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 function App() {
