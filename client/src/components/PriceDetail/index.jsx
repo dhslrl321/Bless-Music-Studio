@@ -11,7 +11,7 @@ import {
 
 const PriceDetail = ({ priceData }) => {
   return (
-    <PriceDetailContainer>
+    <PriceDetailContainer data-aos="zoom-in">
       <DetailTitle>Price Table</DetailTitle>
       <DetailWrapper>
         <DetailTable>

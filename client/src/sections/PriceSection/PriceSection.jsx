@@ -14,18 +14,18 @@ import PriceDetail from "../../components/PriceDetail";
 const PriceCardSection = () => {
   return (
     <PriceContainer>
-      <PriceHeader>
+      <PriceHeader data-aos="zoom-in">
         <PriceTitle>Price</PriceTitle>
         <PriceDesc>블레스 음악 스튜디오의 가격을 확인해보세요!</PriceDesc>
       </PriceHeader>
       <PriceContent>
-        <PriceCardWrap>
+        <PriceCardWrap data-aos="zoom-in">
           {priceData.map((data) => (
-            <PriceCard key={data.id} data={data} />
+            <PriceCard data-aos="zoom-in" key={data.id} data={data} />
           ))}
         </PriceCardWrap>
       </PriceContent>
-      <PriceDetail priceData={priceData} />
+      <PriceDetail data-aos="zoom-in" priceData={priceData} />
     </PriceContainer>
   );
 };

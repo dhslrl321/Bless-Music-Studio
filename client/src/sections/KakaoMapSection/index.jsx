@@ -31,13 +31,13 @@ const KakaoMapSection = () => {
   }, []);
   return (
     <MapContainer>
-      <MapHeader>
+      <MapHeader data-aos="zoom-in">
         <HeaderText>오시는 길</HeaderText>
         <HeaderSubtitle>
           경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실
         </HeaderSubtitle>
       </MapHeader>
-      <MapContent>
+      <MapContent data-aos="zoom-in">
         <MapDiv>
           <Map id="map"></Map>
         </MapDiv>

@@ -16,11 +16,11 @@ import { SliderData } from "../../components/ImageSlider/SliderData";
 const InteriorSection = () => {
   return (
     <InteriorContainer>
-      <InteriorHeaderWrapper>
+      <InteriorHeaderWrapper data-aos="zoom-in">
         <InteriorHeader>Tour</InteriorHeader>
         <InteriorSubtitle>Bless Music Studio를 둘러보세요!</InteriorSubtitle>
       </InteriorHeaderWrapper>
-      <InteriorContentWrapper>
+      <InteriorContentWrapper data-aos="zoom-in">
         <ImageBallWrap>
           {rooms.map((room, index) => (
             <>

@@ -11,7 +11,7 @@ const ReservationSection = () => {
   return (
     <ReservationContainer>
       <Title>예약 및 예약 문의</Title>
-      <ReservationWrapper>
+      <ReservationWrapper data-aos="zoom-in">
         <ReservationColumn>
           <PlatformButton
             text="예약하기"
