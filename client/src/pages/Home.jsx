@@ -8,6 +8,7 @@ import people from "../images/people.svg";
 import music from "../images/music.svg";
 import think from "../images/think.svg";
 import Footer from "../components/Footer";
+
 const Home = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);

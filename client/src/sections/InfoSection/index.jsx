@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   InfoContainer,
   InfoImgWrapper,
@@ -8,6 +8,9 @@ import {
   InfoContent,
 } from "./styles";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const InfoSection = ({
   title,
   description,
@@ -16,8 +19,19 @@ const InfoSection = ({
   darkMode,
   lightText,
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+  const fade = left ? "fade-left" : "fade-right";
   return (
-    <InfoContainer left={left} darkMode={darkMode}>
+    <InfoContainer
+      data-aos={fade}
+      data-aos-anchor-placement="bottom-bottom"
+      left={left}
+      darkMode={darkMode}
+    >
       <InfoImgWrapper>
         <Img src={img} />
       </InfoImgWrapper>

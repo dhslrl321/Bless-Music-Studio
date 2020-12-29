@@ -15,7 +15,7 @@ const HeroSection = () => {
       <HeroBackground>
         <VideoBg autoPlay loop muted src={Sydney} type="video/mp4" />
       </HeroBackground>
-      <HeroContent>
+      <HeroContent data-aos="zoom-in">
         <HeroTitle>Bless Music Studio</HeroTitle>
         <HeroDescription>
           Bless Music Studio에서 당신의 꿈을 키워보세요.
