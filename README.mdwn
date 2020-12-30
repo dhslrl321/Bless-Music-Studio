@@ -70,6 +70,7 @@
 현재 진행중인 도전 과제로 **열심히** 준비중입니다.
 
 - sitemap 등록 [이곳](https://ujeon.medium.com/react-리액트-웹사이트-사이트맵-만들기-1116ff8b6c2a)을 참고했습니다.
+- og 태그 등록 [이곳](https://ecoding.tistory.com/29)을 참고했습니다.
 
 ### 📌 Nginx 와 무중단 배포 ( Clear ! ✔️ )
 
