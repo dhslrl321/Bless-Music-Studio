@@ -22,9 +22,9 @@ const InteriorSection = () => {
       </InteriorHeaderWrapper>
       <InteriorContentWrapper data-aos="zoom-in">
         <ImageBallWrap>
-          {rooms.map((room, index) => (
+          {rooms.map((room) => (
             <>
-              <ImageBall key={index}>
+              <ImageBall key={room.id}>
                 <Img src={room.image} />
                 <Description>{room.desc}</Description>
               </ImageBall>
