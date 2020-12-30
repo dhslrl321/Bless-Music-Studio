@@ -13,7 +13,15 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBackground>
-        <VideoBg autoPlay loop muted src={Sydney} type="video/mp4" />
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={Sydney}
+          type="video/mp4"
+          playsInline
+          webkit-playsinline
+        />
       </HeroBackground>
       <HeroContent data-aos="zoom-in">
         <HeroTitle>Bless Music Studio</HeroTitle>
