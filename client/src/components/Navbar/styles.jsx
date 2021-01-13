@@ -43,7 +43,7 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
-export const NavItem = styled.div`
+export const NavItem = styled.nav`
   display: flex;
   padding: 0 1rem;
   height: 100%;
