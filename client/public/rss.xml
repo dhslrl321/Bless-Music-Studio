@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>블레스 음악 연습실</title>
+    <link>http://blessmusic.cf/</link>
+    <description>당신이 찾는 최고의 피아노 연습실</description>
+    <item>
+      <title>둘러보기</title>
+      <link>http://blessmusic.cf/tour</link>
+      <description>Bless Music Studio를 둘러보세요!</description>
+      <pubDate>2021-01-13T09:33:09+09:00</pubDate>
+      <guid>http://blessmusic.cf/tour</guid>
+    </item>
+
+    <item>
+      <title>Pricing</title>
+      <link>http://blessmusic.cf/pricing</link>
+      <description>블레스 음악 연십실의 가격을 확인해보세요!</description>
+      <pubDate>2021-01-13T09:33:09+09:00</pubDate>
+      <guid>http://blessmusic.cf/pricing</guid>
+    </item>
+
+    <item>
+      <title>Events</title>
+      <link>http://blessmusic.cf/event</link>
+      <description>진행되는 이벤트</description>
+      <pubDate>2021-01-13T09:33:09+09:00</pubDate>
+      <guid>http://blessmusic.cf/event</guid>
+    </item>
+
+    
+  </channel>
+</rss>
