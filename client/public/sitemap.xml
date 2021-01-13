@@ -1,0 +1,19 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://blessmusic.cf</loc>
+    <lastmod>2021-01-13T09:33:09+09:00</lastmod>
+    <priority>1</priority>
+  </url>
+
+  <url>
+    <loc>http://blessmusic.cf/tour</loc>
+  </url>
+
+  <url>
+    <loc>http://blessmusic.cf/pricing</loc>
+  </url>
+
+  <url>
+    <loc>http://blessmusic.cf/event</loc>
+  </url>
+</urlset>
