@@ -18,20 +18,22 @@ const InfoSection = ({
 }) => {
   const fade = left ? "fade-left" : "fade-right";
   return (
-    <InfoContainer
-      data-aos={fade}
-      data-aos-anchor-placement="bottom-bottom"
-      left={left}
-      darkMode={darkMode}
-    >
-      <InfoImgWrapper>
-        <Img src={img} />
-      </InfoImgWrapper>
-      <InfoContent>
-        <InfoTitle lightText={lightText}>{title}</InfoTitle>
-        <InfoDescription lightText={lightText}>{description}</InfoDescription>
-      </InfoContent>
-    </InfoContainer>
+    <main>
+      <InfoContainer
+        data-aos={fade}
+        data-aos-anchor-placement="bottom-bottom"
+        left={left}
+        darkMode={darkMode}
+      >
+        <InfoImgWrapper>
+          <Img src={img} />
+        </InfoImgWrapper>
+        <InfoContent>
+          <InfoTitle lightText={lightText}>{title}</InfoTitle>
+          <InfoDescription lightText={lightText}>{description}</InfoDescription>
+        </InfoContent>
+      </InfoContainer>
+    </main>
   );
 };
 

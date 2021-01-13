@@ -29,24 +29,26 @@ const KakaoMapSection = () => {
     marker.setMap(map);
   }, []);
   return (
-    <MapContainer>
-      <MapHeader data-aos="zoom-in">
-        <HeaderText>오시는 길</HeaderText>
-        <HeaderSubtitle>
-          경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실
-        </HeaderSubtitle>
-      </MapHeader>
-      <MapContent data-aos="zoom-in">
-        <MapDiv>
-          <Map id="map"></Map>
-        </MapDiv>
-        <PlatformButton
-          text="카카오 맵"
-          url="http://kko.to/w1pi-KbDH"
-          isKakao={true}
-        />
-      </MapContent>
-    </MapContainer>
+    <main>
+      <MapContainer>
+        <MapHeader data-aos="zoom-in">
+          <HeaderText>오시는 길</HeaderText>
+          <HeaderSubtitle>
+            경기 부천시 길주로 195 금영프라자2차 6층 블레스음악연습실
+          </HeaderSubtitle>
+        </MapHeader>
+        <MapContent data-aos="zoom-in">
+          <MapDiv>
+            <Map id="map"></Map>
+          </MapDiv>
+          <PlatformButton
+            text="카카오 맵"
+            url="http://kko.to/w1pi-KbDH"
+            isKakao={true}
+          />
+        </MapContent>
+      </MapContainer>
+    </main>
   );
 };
 
