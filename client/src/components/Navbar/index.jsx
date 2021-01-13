@@ -19,7 +19,7 @@ const Navbar = ({ toggle, scrollNav }) => {
   };
 
   return (
-    <>
+    <nav>
       <Nav className="asdf">
         <NavbarContainer scrollNav={scrollNav}>
           <NavLogo className="link-items" to="/" onClick={moveScrollTop}>
@@ -59,7 +59,7 @@ const Navbar = ({ toggle, scrollNav }) => {
           </NavMenu>
         </NavbarContainer>
       </Nav>
-    </>
+    </nav>
   );
 };
 
